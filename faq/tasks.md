@@ -2,6 +2,7 @@ rails -T
 
 # Explain what, when and an use case example for each of the following rails db tasks:
 
+```
 rails db:create # Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to ...
 
 rails db:drop # Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to droppi...
@@ -45,6 +46,6 @@ rails db:structure:dump # Dumps the database structure to db/structure.sql
 rails db:structure:load # Recreates the databases from the structure.sql file
 
 rails db:version # Retrieves the current schema version number
-
+```
 
 
