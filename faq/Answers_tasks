@@ -1,0 +1,27 @@
+rails db:create -- rails db:create  Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV. Usually it is used when doing the first setup of a new project.
+rails db:drop -- Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV. Usually it is used when we want to get rid of the current database and want to start over.
+rails db:environment:set -- Set the environment value for the database. when you get the EnvironmentMismatchError or NoEnvironmentInSchemaError this command fixes it.
+rails db:fixtures:load -- Loads fixtures into the current environment's database. Usually it is used when you load fixtures.
+rails db:migrate -- Migrate the database. Usually it is used when you want to apply changes to the database.
+rails db:migrate:down -- Runs the "down" for a given migration VERSION. Reverts the transformations performed by the last migration's up method by running the down method.
+rails db:migrate:redo -- Rolls back the database one migration and re-migrates up. Usually it is used when your last migration had a mistake.
+rails db:migrate:status -- Display status of migrations. when you want to check the status of your migrations.
+rails db:migrate:up -- Runs the "up" for a given migration VERSION. Runs the up method for a given migration.
+rails db:prepare -- Runs setup if database does not exist, or runs migrations if it does. Runs setup if the database does not exist. Otherwise, it runs the migrations.
+rails db:reset -- Drops and recreates the database from db/schema.rb for the current environment and loads the seeds. Resets your database using your migrations for the current environment. It does this by running the db:drop, db:create, db:migrate tasks. 
+rails db:rollback -- Rolls the schema back to any of the previous versions, undoing the migration that you just ran.
+rails db:schema:cache:clear -- Clears a db/schema_cache.yml file.
+rails db:schema:cache:dump -- Creates a db/schema_cache.yml file.
+rails db:schema:dump -- Creates a database schema file (either db/schema.rb or db/structure.sql, depending on `config.active_record.schema_format`).
+rails db:schema:load -- Loads a database schema file (either db/schema.rb or db/structure.sql, depending on `config.active_record.schema_format`) into the database.
+rails db:seed -- Loads the seed data from db/seeds.rb. Usually it is used when you want to fill certain parts of your database.
+rails db:seed:replant -- Truncates tables of each database for current environment and loads the seeds. Usually it is used when you want to repopulate the seed data
+rails db:setup -- Creates the database, loads the schema, and initializes with the seed data. Usually it is used when you're doing your first setup of a project.
+rails db:structure:dump --  It was used to dump the structure.sql file. 
+rails db:structure:load -- It was used to load the structure.sql file. 
+rails db:version -- Prints the current schema version number. 
+
+
+
+
+
